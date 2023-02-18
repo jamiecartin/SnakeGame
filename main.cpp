@@ -7,7 +7,8 @@ int x, y, fruitX, fruitY, score;
 enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN};
 eDirection dir;
 
-void Setup() {
+void Setup() 
+{
     gameOver = false;
     dir = STOP;
     x = width / 2;
@@ -17,19 +18,40 @@ void Setup() {
     score = 0;
 }
 
-void Draw() {
+void Draw() 
+{
+    system("cls");
+    for (int i = 0; i < width; i++)
+        cout << "#";
+    cout << endl;
+
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < width; j++)
+        {
+            if (j == 0)
+                cout << "#";
+            
+        }
+        
+    }
+    
+    
 
 }
 
-void Input() {
+void Input() 
+{
 
 }
 
-void Logic() {
+void Logic() 
+{
 
 }
 
-int main() {
+int main() 
+{
     Setup();
     while (!gameOver)
     {
