@@ -32,7 +32,13 @@ void Draw()
             if (j == 0)
                 cout << "#";
             
+                cout << " ";
+
+            if (j == width - 1)
+                cout << "#";
+            
         }
+        cout << endl;
         
     }
     
